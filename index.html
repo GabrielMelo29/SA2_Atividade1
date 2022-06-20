@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pr_BR"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta nome="description" content="descrição que fica em baixo do título na pesquisa"> 
+    <link rel="stylesheet" href="style.css">
+    <title>GameMania</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"> 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <a class="logo" href="#">Game Mania</a>
+            <div class="search">
+                <input class="barra" type="text" class="texto" placeholder="O que você procura?">
+                <a href="#"><img src="img/lupa.svg" alt="Lupa"></a>
+            </div>    
+            <ul class="icon">
+                <a href="#"><li class="heart"><img src="img/Favorite.svg" alt="Favotiros"></li></a>
+                <div>
+                    <a href="#"><li class="car">
+                        <img src="img/Shopping_Cart_01.svg" alt="Carrinho">
+                      <p>Produtos <span class="n"> 1</span></p>
+                    </li></a>
+                </div>
+                <a href="#"><li class="login">
+                    <img src="img/icn-07.png" alt="Login">
+                   <p>Entrar/<br>Cadastrar</p></li></a>
+            </ul>
+        </nav>
+        <div id="menu-categorias" class="menu-categorias">
+            <div>
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Todas as categorias &#8744
+                    </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a href="#">Hardware</a></li>
+                    <li><a href="#">Periféricos</a></li>
+                    <li><a href="#">Notebooks</a></li>
+                    <li><a href="#">PC Gamer</a></li>
+                    <li><a href="#">Celular</a></li>
+                    <li><a href="#">Consoles</a></li>
+                    <li><a href="#">Jogos</a></li>
+                    <li><a href="#">Cadeiras Gamer</a></li>
+                </ul>
+            </div>
+            <ul class="menu-categoria">
+               <a href="#"><li class="lista">PC Gamer</li></a>
+               <a href="#"><li class="lista">Hardware</li></a>  
+               <a href="#"><li class="lista">Notebook</li></a>
+               <a href="#"><li class="lista">Periféricos</li></a>
+               <a href="#"><li class="lista">Celular</li></a>     
+           </ul>
+        </div>
+        
+    </header>
+    <div class="banner"></div>
+
+    <section class="secao-promocao">
+        <div class="texto-promocao">
+            <h1>Promoção</h1>
+            <div class="tudo">
+                <h2>Ver tudo</h2>
+                <a href="#"><img src="img/Arrow.png" alt="Ver todos os produtos"></a>
+            </div>
+        </div>
+        <div class="slide">
+            <div>
+                <button class="botao" onclick="scrollr()"><img src="img/wave_arrow left.png" alt=""></button>
+            </div>
+            <div class="produtos-promocao">
+                <div class="promocao">
+                    <div class="produto"><a href="#"><img src="img/notebook.jpg" alt="Notebook"></a>
+                        <h3>%</h3></div>
+                    <div class="produto"><a href="#"><img src="img/gabinete.jpg" alt="Gabinete"></a>
+                        <h3>%</h3></div>
+                    <div class="produto"><a href="#"><img src="img/mouse.jpg" alt="Mouse"></a>
+                        <h3>%</h3></div>
+                    <div class="produto"><a href="#"><img src="img/controle.jpg" alt="Controle"></a>
+                        <h3>%</h3></div>
+                    <div class="produto"><a href="#"><img src="img/earphones-5193970_1920.jpg" alt="Earphones"></a>
+                        <h3>%</h3></div>
+                </div>
+            </div>
+            <div>
+                <button class="botao botaor" onclick="scrolll()"><img src="img/wave_arrow right.png" alt=""></button>
+            </div>    
+        </div>
+        </section>
+
+    <section class="secao-destaques">
+        <h1>Destaque</h1>
+        <div class="destaques">            
+            <div class="produtos-destaque">
+                <a href="#"><img src="img/Rectangle 16.png" alt=""></a>
+                <p class="detalhe">estrelas</p>
+                <p class="descricao detalhe">Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua</p>
+                <div>
+                    <h4 class="detalhe">R$ Valor</h4>
+                    <h5 class="detalhe">À vista</h5>
+                </div>
+                <h6 class="detalhe">R$ Valor</h6>
+            </div>
+            <div class="produtos-destaque">
+                <a href="#"><img src="img/Rectangle 18.png" alt=""></a>
+                <p class="detalhe">estrelas</p>
+                <p class="descricao detalhe">Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua</p>
+                <div>
+                    <h4 class="detalhe">R$ Valor</h4>
+                    <h5 class="detalhe">À vista</h5>
+                </div>
+                <h6 class="detalhe">R$ Valor</h6>
+            </div>
+            <div class="produtos-destaque">
+                <a href="#"><img src="img/Rectangle 19.png" alt=""></a>
+                <p class="detalhe">estrelas</p>
+                <p class="descricao detalhe">Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua</p>
+                <div>
+                    <h4 class="detalhe">R$ Valor</h4>
+                    <h5 class="detalhe">À vista</h5>
+                </div>
+                <h6 class="detalhe">R$ Valor</h6>
+            </div>
+            <div class="produtos-destaque">
+                <a href="#"><img src="img/Rectangle 20.png" alt=""></a>
+                <p class="detalhe">estrelas</p>
+                <p class="descricao detalhe">Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua</p>
+                <div>
+                    <h4 class="detalhe">R$ Valor</h4>
+                    <h5 class="detalhe">À vista</h5>
+                </div>
+                <h6 class="detalhe">R$ Valor</h6>
+            </div>
+            <div class="produtos-destaque">
+                <a href="#"><img src="img/Rectangle 21.png" alt=""></a>
+                <p class="detalhe">estrelas</p>
+                <p class="descricao detalhe">Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua</p>
+                <div>
+                    <h4 class="detalhe">R$ Valor</h4>
+                    <h5 class="detalhe">À vista</h5>
+                </div>
+                <h6 class="detalhe">R$ Valor</h6>
+            </div>
+            <div class="produtos-destaque">
+                <a href="#"><img src="img/Rectangle 22.png" alt=""></a>
+                <p class="detalhe">estrelas</p>
+                <p class="descricao detalhe">Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua</p>
+                <div>
+                    <h4 class="detalhe">R$ Valor</h4>
+                    <h5 class="detalhe">À vista</h5>
+                </div>
+                <h6 class="detalhe">R$ Valor</h6>
+            </div>
+            <div class="produtos-destaque">
+                <a href="#"><img src="img/Rectangle 23.png" alt=""></a>
+                <p class="detalhe">estrelas</p>
+                <p class="descricao detalhe">Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua</p>
+                <div>
+                    <h4 class="detalhe">R$ Valor</h4>
+                    <h5 class="detalhe">À vista</h5>
+                </div>
+                <h6 class="detalhe">R$ Valor</h6>
+            </div>
+            <div class="produtos-destaque">
+                <a href="#"><img src="img/Rectangle 24.png" alt=""></a>
+                <p class="detalhe">estrelas</p>
+                <p class="descricao detalhe">Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua</p>
+                <div>
+                    <h4 class="detalhe">R$ Valor</h4>
+                    <h5 class="detalhe">À vista</h5>
+                </div>
+                <h6 class="detalhe">R$ Valor</h6>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <script>
+        function scrolll() {
+            var left = document.querySelector(".produtos-promocao");
+            left.scrollBy(350, 0);
+        }
+        function scrollr() {
+            var right = document.querySelector(".produtos-promocao");
+            right.scrollBy(-350, 0);
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
