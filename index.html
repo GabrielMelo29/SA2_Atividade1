@@ -32,16 +32,26 @@
                       <p>Produtos <span class="n"> 1</span></p>
                     </li></a>
                 </div>
-                <a href="#"><li class="login">
-                    <img src="img/icn-07.png" alt="Login">
-                   <p>Entrar/<br>Cadastrar</p></li></a>
+                <li class="menu-login">
+                    <div>
+                        <a class="btn1 btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="img/icn-07.png" alt=""> Entrar/ <br>Cadastrar
+                        </a>
+                        <ul class="dropdown-login" aria-labelledby="dropdownMenuLink">
+                            <div>
+                                <li><a href="pages/login.html">Entrar</a></li>
+                                <li><a href="pages/cadastrar.html">Cadastrar</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </nav>
         <div id="menu-categorias" class="menu-categorias">
             <div>
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Todas as categorias &#8744
-                    </a>
+                <a class="btn2 btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Todas as categorias &#8744
+                </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <li><a href="#">Hardware</a></li>
                     <li><a href="#">Periféricos</a></li>
@@ -53,7 +63,7 @@
                     <li><a href="#">Cadeiras Gamer</a></li>
                 </ul>
             </div>
-            <ul class="menu-categoria">
+            <ul class="lista-categoria">
                <a href="#"><li class="lista">PC Gamer</li></a>
                <a href="#"><li class="lista">Hardware</li></a>  
                <a href="#"><li class="lista">Notebook</li></a>
@@ -63,10 +73,12 @@
         </div>
         
     </header>
-    <div class="banner"></div>
+    <div class="banner">
+        <img src="img/Group 16.png" alt="">
+    </div>
 
     <section class="secao-promocao">
-        <div class="texto-promocao">
+        <div class="titulo-promocao">
             <h1>Promoção</h1>
             <div class="tudo">
                 <h2>Ver tudo</h2>
@@ -182,7 +194,75 @@
             </div>
         </div>
     </section>
+    <section class="secao-categoria">
+        <div class="categorias">
+            <div class="categoria">
+                <img src="img/pc.png" alt="">
+                <a href="#"><h2>PC GAMER</h2></a>
+            </div>
+            <div class="categoria">
+                <img src="img/hard.png" alt="">
+                <a href="#"><h2>CATEGORIA</h2></a>
+            </div>
+            <div class="categoria">
+                <img src="img/cell.png" alt="">
+                <a href="#"><h2>CATEGORIA</h2></a>
+            </div>
+        </div>
+    </section>
     
+    <footer>
+        <div class="secao-footer">
+            <a class="loja" href="#">
+                <img src="img/home.png" alt="">
+                <div>
+                    <h2>Loja física em São Paulo</h2>
+                    <h3>Av. nome avenida 2929, bairro</h3>
+                </div>
+            </a> 
+            <div class="todas-informacoes">
+                <div class="informacoes">
+                    <div class="atendimento info">
+                        <h1>ATENDIMENTO</h1>
+                        <a href="#"><p>Informações</p></a>
+                        <a href="#"><p>Informações</p></a>
+                        <a href="#"><p>Informações</p></a>
+                    </div>
+                    <div class="institucional info">
+                        <h1>INSTITUCIONAL</h1>
+                        <a href="#"><p>Informações</p></a>
+                        <a href="#"><p>Informações</p></a>
+                        <a href="#"><p>Informações</p></a>
+                    </div>
+                    <div class="pagamento">
+                        <h1>FORMAS DE PAGAMENTO</h1>
+                        <div>
+                            <img src="img/mastercard.png" alt="">
+                            <img src="img/visa.png" alt="">
+                            <img src="img/boleto.png" alt="">
+                            <img src="img/pix.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="email">
+                    <p>Receba ofertas exclusivas no seu e-mail</p>
+                    <form action="" class="search">
+                        <input class="barra" type="email" class="texto" placeholder="E-mail">
+                        <button><img src="img/arrow right.png" alt="Lupa"></button>
+                    </form>
+                    <div class="contatos">
+                        <li><a href=""><img src="img/WhatsApp.png" alt="Logo WhatsApp"></a></li>
+                        <li><a href=""><img src="img/Vector 1454 (Stroke).png" alt="Logo Facebook"></a></li>
+                        <li><a href=""><img src="img/Instagram.png" alt="Logo Instagram"></a></li>
+                        <li><a href=""><img src="img/Twitter.png" alt="Logo Twitter"></a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="mais">
+                <a href="">MAIS INFORMAÇÕES</a>
+            </div>
+        </div>
+    </footer>
 
 
 
