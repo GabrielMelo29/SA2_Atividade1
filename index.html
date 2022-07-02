@@ -19,7 +19,12 @@
 <body>
     <header>
         <nav class="navigation">
-            <a class="logo" href="#">Game Mania</a>
+            <a onclick="mostrarMenu()" class="menu-barra" href="#">
+                <img src="img/bars-solid.svg" alt="">
+            </a>
+            <a class="logo" href="#">
+                Game Mania
+            </a>
             <div class="search">
                 <input class="barra" type="text" class="texto" placeholder="O que você procura?">
                 <a href="#"><img src="img/lupa.svg" alt="Lupa"></a>
@@ -47,7 +52,18 @@
                 </li>
             </ul>
         </nav>
-        <div id="menu-categorias" class="menu-categorias">
+        <ul class="menu">
+            <li><a href="#">Hardware</a></li>
+            <li><a href="#">Periféricos</a></li>
+            <li><a href="#">Notebooks</a></li>
+            <li><a href="#">PC Gamer</a></li>
+            <li><a href="#">Celular</a></li>
+            <li><a href="#">Consoles</a></li>
+            <li><a href="#">Jogos</a></li>
+            <li><a href="#">Cadeiras Gamer</a></li>
+        </ul>
+    </div>
+        <div class="menu-categorias">
             <div>
                 <a class="btn2 btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Todas as categorias &#8744
@@ -247,8 +263,8 @@
                 <div class="email">
                     <p>Receba ofertas exclusivas no seu e-mail</p>
                     <form action="" class="search">
-                        <input class="barra" type="email" class="texto" placeholder="E-mail">
-                        <button><img src="img/arrow right.png" alt="Lupa"></button>
+                        <input class="barra campo-email" type="email" class="texto" placeholder="E-mail" required>
+                        <button onclick="enviarEmail()"><img src="img/arrow right.png" alt="Lupa"></button>
                     </form>
                     <div class="contatos">
                         <li><a href=""><img src="img/WhatsApp.png" alt="Logo WhatsApp"></a></li>
@@ -264,16 +280,7 @@
         </div>
     </footer>
 
-
-
-    <script>
-        function scrolll() {
-            var left = document.querySelector(".produtos-promocao");
-            left.scrollBy(350, 0);
-        }
-        function scrollr() {
-            var right = document.querySelector(".produtos-promocao");
-            right.scrollBy(-350, 0);
-        }
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
