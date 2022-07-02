@@ -14,18 +14,33 @@
                 <h1>Login</h1>
                     <div class="dados">
                         <label for="usuario">Usuário</label>
-                        <input type="text" name="usuario">
+                        <input id="usuario" type="text" name="usuario">
                     </div>
                     <div class="dados ">
                         <label for="senha">Senha</label>
-                        <input type="password" name="senha">
+                        <input id="senha" type="password" name="senha" class="senha">
+                        <img class="eye" src="../img/eye-regular.svg">
                     </div>
-                <button class="btn-login">Login</button>
-                <div>
+                <button class="btn-login" onclick="login()">Login</button>
+                <div class="outros">
                     <a href="">Esqueceu a senha?</a>
                     <a href="cadastrar.html">Cadastrar</a>
                 </div>
         </div>
     </div>
+
+    <script>
+        const senha = document.querySelector(".senha")
+        const eye = document.querySelector(".eye")
+        eye.onclick = () => {
+            if (senha.type === "password") {
+                senha.type = "text"
+                eye.src = "../img/eye-slash-regular.svg"
+            } else {
+                senha.type = "password"
+                eye.src = "../img/eye-regular.svg"
+            }
+        }
+    </script>
 </body>
 </html>

@@ -14,7 +14,7 @@ body {
     padding: 7% 5%;
     margin: auto;
 }
-.main-login .voltar {
+.voltar {
     display: block;
     width: 4%;
     height: 4%;
@@ -34,22 +34,32 @@ body {
     text-decoration: underline;
     margin-bottom: 10%;
 }
-.login div a {
+.outros {
+    display: flex;
     font-family: "Poppins", sans-serif;
+    flex-direction: column;
+    align-items: center;
+}
+.outros a {
     text-decoration: none;
     color: var(--text-color);
-    display: flex;
-    justify-content: center;
     margin-top: 2%;
+}
+.outros a:hover {
+    text-decoration: underline;
 }
 
 .dados {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: space-between;
     border-bottom: 2px solid var(--border);
     height: 5rem;
     margin-bottom: 3%;
+}
+.dados:hover {
+    border-bottom: 2px solid var(--text-color);
 }
 .dados label {
     font: 700 1.5rem "Poppins", sans-serif;
@@ -63,6 +73,15 @@ body {
     outline: none; 
     color: var(--text-color);
 }
+.eye {
+    width: 1.5rem;
+    position: absolute;
+    top: 60%;
+    cursor: pointer;
+    right: 0;
+}
+
+
 .btn-login {
     cursor: pointer;
     height: 4rem;
@@ -71,9 +90,6 @@ body {
     font: 400 1.5rem "Poppins", sans-serif;
     background-color: #f92727b0;
     color: var(--text-color);
-}
-.dados:hover {
-    border-bottom: 2px solid var(--text-color);
 }
 
 
@@ -86,14 +102,53 @@ body {
 
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1200px) {
     .main-login {
         width: 80%;
     }
+    .voltar {
+        width: 1.5rem;
+        height: 2.5rem;
+    }
+    .login h1 {
+        font-size: 2rem;
+    }   
+    .dados label {
+        font-size: 1.3rem;
+    }
+    .dados input {
+        font-size: 1.3rem;
+    }  
+    .btn-login {
+        font-size: 1.3rem;
+    }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 760px) {
     .main-login {
         width: 90%;
+    }
+    .voltar {
+        width: 1.5rem;
+        height: 2.5rem;
+    }
+    .login h1 {
+        font-size: 1.8rem;
+    }   
+    .dados {
+        height: 4.5rem;
+    }
+    .dados label {
+        font-size: 1.3rem;
+    }
+    .dados input {
+        font-size: 1.3rem;
+    }
+    .eye {
+        width: 1.3rem;
+    }
+    .btn-login {
+        font-size: 1.3rem;
+        height: 3.5rem;
     }
 }
