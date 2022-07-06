@@ -16,7 +16,7 @@
 
 </head>
 
-<body>
+<body onload="renderizarProdutos(), renderizarCategorias()">
     <header>
         <nav class="navigation">
             <a onclick="mostrarMenu()" class="menu-barra" href="#">
@@ -89,8 +89,8 @@
         </div>
         
     </header>
-    <div class="banner">
-        <img src="img/Group 16.png" alt="">
+    <div class="carrosel" id="carrosel">
+        <img src="img/Group 16 (1).png" alt="">
     </div>
 
     <section class="secao-promocao">
@@ -127,103 +127,12 @@
 
     <section class="secao-destaques">
         <h1>Destaque</h1>
-        <div class="destaques">            
-            <div class="produtos-destaque">
-                <a href="#"><img src="img/Rectangle 16.png" alt=""></a>
-                <p class="detalhe">estrelas</p>
-                <p class="descricao detalhe">Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua</p>
-                <div>
-                    <h4 class="detalhe">R$ Valor</h4>
-                    <h5 class="detalhe">À vista</h5>
-                </div>
-                <h6 class="detalhe">R$ Valor</h6>
-            </div>
-            <div class="produtos-destaque">
-                <a href="#"><img src="img/Rectangle 18.png" alt=""></a>
-                <p class="detalhe">estrelas</p>
-                <p class="descricao detalhe">Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua</p>
-                <div>
-                    <h4 class="detalhe">R$ Valor</h4>
-                    <h5 class="detalhe">À vista</h5>
-                </div>
-                <h6 class="detalhe">R$ Valor</h6>
-            </div>
-            <div class="produtos-destaque">
-                <a href="#"><img src="img/Rectangle 19.png" alt=""></a>
-                <p class="detalhe">estrelas</p>
-                <p class="descricao detalhe">Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua</p>
-                <div>
-                    <h4 class="detalhe">R$ Valor</h4>
-                    <h5 class="detalhe">À vista</h5>
-                </div>
-                <h6 class="detalhe">R$ Valor</h6>
-            </div>
-            <div class="produtos-destaque">
-                <a href="#"><img src="img/Rectangle 20.png" alt=""></a>
-                <p class="detalhe">estrelas</p>
-                <p class="descricao detalhe">Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua</p>
-                <div>
-                    <h4 class="detalhe">R$ Valor</h4>
-                    <h5 class="detalhe">À vista</h5>
-                </div>
-                <h6 class="detalhe">R$ Valor</h6>
-            </div>
-            <div class="produtos-destaque">
-                <a href="#"><img src="img/Rectangle 21.png" alt=""></a>
-                <p class="detalhe">estrelas</p>
-                <p class="descricao detalhe">Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua</p>
-                <div>
-                    <h4 class="detalhe">R$ Valor</h4>
-                    <h5 class="detalhe">À vista</h5>
-                </div>
-                <h6 class="detalhe">R$ Valor</h6>
-            </div>
-            <div class="produtos-destaque">
-                <a href="#"><img src="img/Rectangle 22.png" alt=""></a>
-                <p class="detalhe">estrelas</p>
-                <p class="descricao detalhe">Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua</p>
-                <div>
-                    <h4 class="detalhe">R$ Valor</h4>
-                    <h5 class="detalhe">À vista</h5>
-                </div>
-                <h6 class="detalhe">R$ Valor</h6>
-            </div>
-            <div class="produtos-destaque">
-                <a href="#"><img src="img/Rectangle 23.png" alt=""></a>
-                <p class="detalhe">estrelas</p>
-                <p class="descricao detalhe">Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua</p>
-                <div>
-                    <h4 class="detalhe">R$ Valor</h4>
-                    <h5 class="detalhe">À vista</h5>
-                </div>
-                <h6 class="detalhe">R$ Valor</h6>
-            </div>
-            <div class="produtos-destaque">
-                <a href="#"><img src="img/Rectangle 24.png" alt=""></a>
-                <p class="detalhe">estrelas</p>
-                <p class="descricao detalhe">Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua</p>
-                <div>
-                    <h4 class="detalhe">R$ Valor</h4>
-                    <h5 class="detalhe">À vista</h5>
-                </div>
-                <h6 class="detalhe">R$ Valor</h6>
-            </div>
+        <div id="espaco-produtos" class="destaques">            
         </div>
     </section>
+
     <section class="secao-categoria">
-        <div class="categorias">
-            <div class="categoria">
-                <img src="img/pc.png" alt="">
-                <a href="#"><h2>PC GAMER</h2></a>
-            </div>
-            <div class="categoria">
-                <img src="img/hard.png" alt="">
-                <a href="#"><h2>CATEGORIA</h2></a>
-            </div>
-            <div class="categoria">
-                <img src="img/cell.png" alt="">
-                <a href="#"><h2>CATEGORIA</h2></a>
-            </div>
+        <div id="espaco-categorias" class="categorias">
         </div>
     </section>
     
@@ -236,6 +145,40 @@
                     <h3>Av. nome avenida 2929, bairro</h3>
                 </div>
             </a> 
+            <div class="dropdown-atend">
+                <div class="select-at">
+                    <span>ATENDIMENTO</span>
+                    <div class="drop"></div>
+                </div>
+                <ul class="lista-atend">
+                   <li class="list-at"><span>Informações</span></li> 
+                   <li class="list-at"><span>Informações</span></li>
+                   <li class="list-at"><span>Informações</span></li>
+                </ul>
+            </div>
+            <div class="dropdown-inst">
+                <div class="select-in">
+                    <span>INSTITUCIONAL</span>
+                    <div class="drop"></div>
+                </div>
+                <ul class="lista-inst">
+                <li class="list-in"><span>Informações</span></li> 
+                <li class="list-in"><span>Informações</span></li>
+                <li class="list-in"><span>Informações</span></li>
+                </ul>
+            </div>
+            <div class="dropdown-pag">
+                <div class="select-pag">
+                    <span>FORMAS DE PAGAMENTO</span>
+                    <div class="drop"></div>
+                </div>
+                <ul class="lista-pag">
+                <li class="list-pag"><img src="img/mastercard.png" alt=""></li> 
+                <li class="list-pag"><img src="img/visa.png" alt=""></li>
+                <li class="list-pag"><img src="img/boleto.png" alt=""></li>
+                <li class="list-pag"><img src="img/pix.png" alt=""></li>
+                </ul>
+            </div>
             <div class="todas-informacoes">
                 <div class="informacoes">
                     <div class="atendimento info">
@@ -260,12 +203,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="email">
-                    <p>Receba ofertas exclusivas no seu e-mail</p>
-                    <form action="" class="search">
-                        <input class="barra campo-email" type="email" class="texto" placeholder="E-mail" required>
-                        <button onclick="enviarEmail()"><img src="img/arrow right.png" alt="Lupa"></button>
-                    </form>
+                <div class="secao-email">
+                    <div class="email">
+                        <p>Receba ofertas exclusivas no seu e-mail</p>
+                        <form action="" class="search">
+                            <input class="barra campo-email" type="email" class="texto" placeholder="E-mail" required>
+                            <button onclick="enviarEmail()"><img src="img/arrow right.png" alt="Lupa"></button>
+                        </form>
+                    </div>
                     <div class="contatos">
                         <li><a href=""><img src="img/WhatsApp.png" alt="Logo WhatsApp"></a></li>
                         <li><a href=""><img src="img/Vector 1454 (Stroke).png" alt="Logo Facebook"></a></li>
@@ -282,5 +227,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
 </body>
 </html>

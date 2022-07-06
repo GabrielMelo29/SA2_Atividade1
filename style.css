@@ -145,23 +145,20 @@ header {
 }
 .lista-categoria {
     font: 700 1rem "Poppins", sans-serif;
-    width: 55rem;
+    width: 74%;
     display: flex;
     justify-content: space-between;
 }
 
-.banner {
+#carrosel {
     height: 14.5rem;
     width: 70%;
     margin: auto;
 }
-.banner img {
+#carrosel img {
     width: 100%; height: 100%;
 }
-.image {
-    height: 14rem;
-    width: 100%;
-}
+
 .n {
     color: #f92727;
 }
@@ -257,8 +254,7 @@ header {
     margin-top: 0.3rem;
 }
 .produtos-destaque {
-    width: 18rem;
-    flex-grow: 1;
+    width: 25%;
     padding: 2% 1%;
 }
 .produtos-destaque div {
@@ -289,16 +285,18 @@ header {
     margin-top: 3rem;
 }
 .categorias {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
 }
 .categoria {
-    flex-grow: 1;
     padding: 1%;
+    width: 33.3%;
+    height: 17rem;
     position: relative;
 }
 .categoria img {
-    width: 100%; height: 17rem;
+    display: block;
+    width: 100%; height: 100%;
     border-radius: 0.3rem;
 }
 .categorias h2 {
@@ -318,7 +316,7 @@ header {
 footer {
     background-color: var(--header);
     margin-top: 3rem;
-    height: 24rem;
+    height: auto;
 }
 .secao-footer {
     width: 70%;
@@ -331,6 +329,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin: auto;
+    margin-bottom: 3rem;
 }
 .todas-informacoes {
     display: flex;
@@ -369,14 +368,69 @@ footer {
     border-radius: .3rem;
     margin-top: 4%;
 }
-.email{ 
+
+.dropdown-atend, .dropdown-inst, .dropdown-pag {
+    display: none;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.select-at, .select-in, .select-pag {
+    font: 700 1rem "Poppins", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.select-at:hover {
+    border-bottom: 1px solid white;
+}
+.select-in:hover {
+    border-bottom: 1px solid white;
+}
+.select-pag:hover {
+    border-bottom: 1px solid white;
+}
+.drop {
+    width: 0; height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid white;
+}
+.lista-atend, .lista-inst, .lista-pag {
+    padding: .3rem .6rem;
+    position: relative;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: none;
+}
+.active .lista-atend {
+    display: block;
+}
+.active .lista-inst {
+    display: block;
+}
+.active .lista-pag {
+    display: block;
+}
+.list-at, .list-in, .list-pag {
+    padding: .7rem .5rem;
+    cursor: pointer;
+    width: fit-content;
+}
+.list-pag img{
+    width: 4rem;
+}
+
+.secao-email{ 
     width: 45%;
 }
-.email .search {
+.secao-email .search {
     width: 100%;
     margin-top: 1%;
 }
-.email button {
+.secao-email button {
     border: none;
     cursor: pointer;
 }
@@ -403,7 +457,7 @@ footer {
 
 @media screen and (max-width:1200px) {
     .navigation {
-        width: 80%;
+        width: 85%;
         position: relative;
     }
     .navigation .search {
@@ -423,16 +477,161 @@ footer {
     .menu-categorias {
         display: none;
     }
+    #carrosel {
+        height: 14rem;
+        width: 85%;
+    }
+
+    /* ------------------------------------ PROMOÇÃO ------------------------ */
+    .secao-promocao {
+        width: 85%;
+    }
+    .texto-promocao h1 {
+        font-size: 20px;
+    }
+    .tudo {
+        width: 7rem;
+        font-size: 0.7rem;
+    }
+    .produto {
+        width: 14rem;
+        height: 13rem;
+    }
+    .produto h3 {
+        bottom: 75%;
+    }
+
+/* ----------------------------------- DESTAQUES ----------------------------- */
+    .secao-destaques {
+        max-width: 85%;
+    }
+    .produtos-destaque {
+        width: 33.3%;
+    }
+
+    /* --------------------------------- CATEGORIA ---------------------------- */
+    .secao-categoria {
+        width: 85%;
+        font-size: 13px;
+    }
+    .categoria {
+        padding: .5%;
+        height: 15rem;
+    }
+    .categorias h2 {
+        padding: .8rem 3.5rem;
+    }
+    .categoria a {    
+        top: 35%;
+        left: 10%;
+        width: 80%;
+        z-index: 1;
+    }
+
+    /* ----------------------------------- FOOTER ----------------------------- */
+footer {
+    height: auto;
+}
+.secao-footer {
+    width: 85%;
+}
+.informacoes {
+    display: none;
+}
+.dropdown-atend, .dropdown-inst, .dropdown-pag {
+    display: block;
+}
+.secao-email{ 
+    width: 70%;
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.email {
+    margin-top: 1rem;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+.mais{
+display: none;
+}
+
 }
 
 @media screen and (max-width: 760px) {
     .navigation {
-        width: 90%;
+        width: 95%;
+    }
+    .logo {
+        font-size: 1.6rem;
     }
     .car p {
         display: none;
     }
     .car {
         width: 100%;
+    }
+    #carrosel {
+        height: 14rem;
+        width: 95%;
+    }
+
+    /* ------------------------------------ PROMOÇÃO ------------------------ */
+    .secao-promocao {
+        width: 95%;
+    }
+    .texto-promocao h1 {
+        font-size: 15px;
+    }
+    .tudo {
+        width: 7rem;
+        font-size: 0.rem;
+    }
+    .botao {
+        height: 3rem; width: 3rem;
+    }
+    .produto {
+        width: 12rem;
+        height: 11rem;
+    }
+    .produto h3 {
+        bottom: 70%;
+        padding: .05rem 1.5rem;
+    }
+
+    /* ----------------------------------- DESTAQUES ----------------------------- */
+    .secao-destaques {
+        max-width: 95%;
+    }
+    .produtos-destaque {
+        width: 50%;
+    }
+    
+    /* --------------------------------- CATEGORIA ---------------------------- */
+    .secao-categoria {
+        width: 95%;
+        font-size: 13px;
+    }
+    .categorias {
+        flex-direction: column;
+    }
+    .categoria {
+        padding: 1%;
+        width: 100%;
+        height: 18rem;
+    }
+    .categorias h2 {
+        border: 3px solid white;
+        padding: 1.4rem 4rem;
+    }
+
+    /* ----------------------------------- FOOTER ----------------------------- */
+    .secao-footer {
+        width: 95%;
+    }
+    .secao-email{ 
+        width: 80%;
     }
 }
